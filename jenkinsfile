@@ -5,9 +5,9 @@ pipeline {
         jdk 'jdk'
     }
     stages {
-        stage('Build') {
-        sh 'file 19'
+        stage('Build') { 
             steps {
+                sh 'file 19'
                 sh 'mvn clean package'
                 
             }
